@@ -8,7 +8,9 @@ Most of my settings are adopted form [this](https://zhuanlan.zhihu.com/p/4416122
 
 - [ ] C and C++ completion
 
-- [ ] Haskell support
+- [x] Haskell support
 
 - [ ] More packages
+
+- [ ] Find out whether to use HLS or Haskell-mode
 

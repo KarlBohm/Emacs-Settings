@@ -50,6 +50,8 @@
 
 (require 'init-ace-win)
 
+(require 'init-haskell)
+
 (provide 'init)
 
 ;;; init.el ends here
