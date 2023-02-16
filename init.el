@@ -54,6 +54,8 @@
 
 (require 'init-ligature)
 
+(require 'init-proof)
+
 (provide 'init)
 
 ;;; init.el ends here
