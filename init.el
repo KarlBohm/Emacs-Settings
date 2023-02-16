@@ -52,6 +52,8 @@
 
 (require 'init-haskell)
 
+(require 'init-ligature)
+
 (provide 'init)
 
 ;;; init.el ends here
