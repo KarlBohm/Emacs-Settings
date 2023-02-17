@@ -19,3 +19,5 @@ A default font is written in `./lisp/common.el`, so **Sarasa Mono Slab** needs t
 - [x] Proof General support
 
 - [ ] Change structure in order to avoid hard-coded paths for `projectile.el`
+
+- [ ] Add Smerge to resolve conflict
