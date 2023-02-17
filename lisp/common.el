@@ -22,7 +22,7 @@
 (savehist-mode 1)                            ; （可选）打开 Buffer 历史记录保存
 (setq display-line-numbers-type 'relative)   ; （可选）显示相对行号
 
-(add-to-list 'default-frame-alist '(font . "Sarasa Mono Slab SC-13" ))  ; 更改为更纱黑体
+(add-to-list 'default-frame-alist '(font . "Sarasa Mono Slab SC-14" ))  ; 更改为更纱黑体
 
 ;; Faster move cursor
 (defun next-ten-lines()
