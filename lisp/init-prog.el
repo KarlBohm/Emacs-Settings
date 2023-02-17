@@ -10,7 +10,9 @@
   :config
   (setq projectile-mode-line "Projectile")
   (setq projectile-track-known-projects-automatically nil)
-  (setq projectile-project-search-path '("~/" "~/code/" "~/Documents/SoftwareFoundation/")))
+  (setq projectile-project-search-path '("~/" "~/code/" "~/Documents/SoftwareFoundation/"))
+  (setq projectile-generic-command "fd . -0 --type f --color=never") ; for fd < v8.3.0
+  )
 
 (use-package counsel-projectile
   :ensure t
