@@ -16,3 +16,4 @@ A default font is written in `./lisp/common.el`, so **Sarasa Mono Slab** needs t
 
 - [ ] Find out whether to use HLS or Haskell-mode
 
+- [x] Proof General support
