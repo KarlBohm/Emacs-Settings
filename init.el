@@ -26,7 +26,7 @@
             (lambda () (setq gc-cons-threshold normal-gc-cons-threshold))))
 
 ;;; Learning module
-(require 'hello)
+; (require 'hello)
 
 ;;; Emacs settings
 (require 'common)
@@ -55,6 +55,10 @@
 (require 'init-ligature)
 
 (require 'init-proof)
+
+(require 'init-dashboard)
+
+(require 'init-prog)
 
 (provide 'init)
 
