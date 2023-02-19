@@ -24,6 +24,10 @@
 
 (add-to-list 'default-frame-alist '(font . "Sarasa Mono Slab SC-14" ))  ; 更改为更纱黑体
 
+;; Specify font for Chinese characters, copied from Centaur Emacs
+(setq face-font-rescale-alist `((,"LXGW wenkai" . 1)))
+(set-fontset-font t '(#x4e00 . #x9fff) (font-spec :family "LXGW wenkai"))
+
 ;; Faster move cursor
 (defun next-ten-lines()
   "Move cursor to next 10 lines."
