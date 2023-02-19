@@ -25,8 +25,9 @@
 (add-to-list 'default-frame-alist '(font . "Sarasa Mono Slab SC-14" ))  ; 更改为更纱黑体
 
 ;; Specify font for Chinese characters, copied from Centaur Emacs
-(setq face-font-rescale-alist `((,"LXGW WenKai Mono" . 1)))
-(set-fontset-font t '(#x4e00 . #x9fff) (font-spec :family "LXGW WenKai Mono"))
+(when (display-graphic-p)
+  (setq face-font-rescale-alist `((,"LXGW WenKai Mono" . 1)))
+  (set-fontset-font t '(#x4e00 . #x9fff) (font-spec :family "LXGW WenKai Mono")))
 
 ;; Faster move cursor
 (defun next-ten-lines()
