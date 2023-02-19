@@ -11,7 +11,9 @@
 ;(load-theme 'dracula t)
 
 (use-package all-the-icons
-  :ensure t)
+  :ensure t
+  :config
+  (add-to-list `all-the-icons-extension-icon-alist `("v" all-the-icons-fileicon "coq"  :heightt 1.0 :v-adjust -0.2 :face all-the-icons-reds)))
 
 (use-package doom-themes
   :ensure t

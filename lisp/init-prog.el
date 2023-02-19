@@ -28,6 +28,11 @@
   :defer t
   :config
   (treemacs-tag-follow-mode)
+  ;; Change icons for .v file from verilog to Coq
+  (treemacs-create-icon
+   :icon
+   (format "  %s\t" (all-the-icons-fileicon "coq" :v-adjust 0 :face 'doom-themes-treemacs-file-face))
+   :extensions ("v"))
   :bind
   (:map global-map
         ("M-0"       . treemacs-select-window)
@@ -37,7 +42,8 @@
         ;; ("C-x t C-t" . treemacs-find-file)
         ("C-x t M-t" . treemacs-find-tag))
   (:map treemacs-mode-map
-	("/" . treemacs-advanced-helpful-hydra)))
+	("/" . treemacs-advanced-helpful-hydra))
+  )
 
 (use-package treemacs-projectile
   :ensure t
