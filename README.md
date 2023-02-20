@@ -2,7 +2,7 @@
 
 I'm currently learning Emacs as well as Emacs Lisp. This repository is used to sync my settings and record my progress.
 
-Most of my settings are adopted form [this](https://zhuanlan.zhihu.com/p/441612281) guide. Package settings are generally modified from the README of the pacakges respectively. 
+Most of my settings are adopted form [this](https://zhuanlan.zhihu.com/p/441612281) guide. Package settings are mostly adopted from the default settings provided by pacakges respectively. 
 
 Default fonts is written in `./lisp/common.el`, so **Sarasa Mono Slab** and **LXGW WenKai** need to be installed or fallback fonts will be used. 
 

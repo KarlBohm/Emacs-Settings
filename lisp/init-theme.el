@@ -22,7 +22,6 @@
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
   (load-theme 'doom-tokyo-night t)
-
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
   ; (doom-themes-neotree-config)
@@ -38,7 +37,8 @@
 
 (use-package doom-modeline
   :ensure t
-  :init (doom-modeline-mode 1))
+  :init (doom-modeline-mode 1)
+  :config (setq doom-modeline-time t))
 
 (provide 'init-theme)
 

@@ -24,6 +24,9 @@
 
 (add-to-list 'default-frame-alist '(font . "Sarasa Mono Slab SC-14" ))  ; 更改为更纱黑体
 
+(setq display-time-24hr-format t) ; 24 小时格式（以规避中文空格问题）
+(display-time-mode 1) ; 显示时间
+
 ;; Specify font for Chinese characters, copied from Centaur Emacs
 (when (display-graphic-p)
   (setq face-font-rescale-alist `((,"LXGW WenKai Mono" . 1)))
