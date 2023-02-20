@@ -1,4 +1,4 @@
-;;; common -- Put all the basic settings here
+;;; common -- Put all the basic settings here  -*- lexical-binding: t -*-
 ;;; Commentary:
 
 ;; This file holds all the settings related only to emacs itself.
@@ -45,6 +45,30 @@
 ;; 绑定到快捷键
 (global-set-key (kbd "M-n") 'next-ten-lines)            ; 光标向下移动 10 行
 (global-set-key (kbd "M-p") 'previous-ten-lines)        ; 光标向上移动 10 行
+
+;; Behave like vi's o command, from Emacs Wiki
+(defun open-next-line (arg)
+  "Move to the next line and then opens a line. See also `newline-and-indent'."
+  (interactive "p")
+  (end-of-line)
+  (open-line arg)
+  (forward-line 1)
+  (when 'newline-and-indent
+    (indent-according-to-mode)))
+
+(defun open-previous-line (arg)
+  "Open a new line before the current one. See also `newline-and-indent'."
+  (interactive "p")
+  (beginning-of-line)
+  (open-line arg)
+  (when 'newline-and-indent
+    (indent-according-to-mode)))
+
+(global-set-key (kbd "C-j") nil)
+;; 删去光标所在行（在图形界面时可以用 "C-S-<DEL>"，终端常会拦截这个按法)
+(global-set-key (kbd "C-j C-k") 'kill-whole-line)
+(global-set-key (kbd "C-j C-j") 'open-next-line) ; 或许我应该设置为 C-o
+(global-set-key (kbd "C-j C-l") 'open-previous-line) ; 或者 M-o
 
 (provide 'common)
 ;;; common.el ends here

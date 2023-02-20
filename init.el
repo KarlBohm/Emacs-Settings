@@ -60,6 +60,8 @@
 
 (require 'init-prog)
 
+(require 'init-edit)
+
 (provide 'init)
 
 ;;; init.el ends here
