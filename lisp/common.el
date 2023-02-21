@@ -65,7 +65,7 @@
     (indent-according-to-mode)))
 
 (global-set-key (kbd "C-j") nil)
-;; 删去光标所在行（在图形界面时可以用 "C-S-<DEL>"，终端常会拦截这个按法)
+;; 删去光标所在行 
 (global-set-key (kbd "C-j C-k") 'kill-whole-line)
 (global-set-key (kbd "C-j C-j") 'open-next-line) ; 或许我应该设置为 C-o
 (global-set-key (kbd "C-j C-l") 'open-previous-line) ; 或者 M-o
