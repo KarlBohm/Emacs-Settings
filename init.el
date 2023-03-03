@@ -52,6 +52,8 @@
 
 (require 'init-haskell)
 
+(require 'init-org)
+
 (require 'init-ligature)
 
 (require 'init-proof)
@@ -61,6 +63,8 @@
 (require 'init-prog)
 
 (require 'init-edit)
+
+(require 'init-read)
 
 (provide 'init)
 

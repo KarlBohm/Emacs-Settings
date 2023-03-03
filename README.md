@@ -12,10 +12,8 @@ Default fonts is written in `./lisp/common.el`, so **Sarasa Mono Slab** and **LX
 
 - [x] Haskell support
 
-- [ ] More packages
-
 - [ ] Find out whether to use HLS or Haskell-mode
 
 - [x] Proof General support
 
-- [ ] Change structure in order to avoid hard-coded paths for `projectile.el`
+- [ ] Change structure in order to avoid hard-coded paths for `projectile.

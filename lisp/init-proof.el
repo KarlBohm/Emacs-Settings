@@ -4,7 +4,9 @@
 ;;; Code:
 
 (use-package proof-general
-  :ensure t)
+  :ensure t
+  :config
+  (setq coq-compile-before-require t))
 
 (provide 'init-proof)
 
