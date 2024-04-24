@@ -8,7 +8,7 @@
  '(delete-selection-mode nil)
  '(display-line-numbers-type 'relative)
  '(package-selected-packages
-   '(pdf-tools pdf-view nov embark marginalia treemacs-projectile treemacs magit counsel-projectile projectile dashboard proof-general ligature mwim amx counsel haskell-mode doom-modeline spaceline-all-the-icons ace-window undo-tree dracula-theme use-package))
+   '(magit pdf-tools pdf-view nov embark marginalia treemacs-projectile treemacs counsel-projectile projectile dashboard proof-general ligature mwim amx counsel haskell-mode doom-modeline spaceline-all-the-icons ace-window undo-tree dracula-theme use-package))
  '(ps-paper-type 'a4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
